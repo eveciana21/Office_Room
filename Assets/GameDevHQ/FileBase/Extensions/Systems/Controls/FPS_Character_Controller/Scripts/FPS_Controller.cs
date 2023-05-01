@@ -45,6 +45,7 @@ namespace GameDevHQ.FileBase.Plugins.FPS_Character_Controller
             _controller = GetComponent<CharacterController>(); //assign the reference variable to the component
             _fpsCamera = GetComponentInChildren<Camera>();
             _initialCameraPos = _fpsCamera.transform.localPosition;
+        
         }
 
         private void Update()
@@ -60,6 +61,15 @@ namespace GameDevHQ.FileBase.Plugins.FPS_Character_Controller
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 _controller.height = 1.0f;
+            }
+
+            if (Input.GetKey(KeyCode.R))
+            {
+                Cursor.visible = false;
+            }
+            else if (Input.GetKey(KeyCode.E))
+            {
+                Cursor.visible = true;
             }
         }
 
