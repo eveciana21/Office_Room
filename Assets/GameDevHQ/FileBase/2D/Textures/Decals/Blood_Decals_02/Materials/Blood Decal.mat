@@ -55,8 +55,6 @@ Material:
   - DBufferMesh_AOS
   - DBufferMesh_MAOS
   - RayTracingPrepass
-  - DecalMeshForwardEmissive
-  - DecalProjectorForwardEmissive
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
